@@ -6,7 +6,7 @@ for line in fh:
 	string = line.rstrip().split()
 	for word in string:
 		lst.append(word)
-		
+
 for x in lst:
 	if x in cleanlst :
 		continue

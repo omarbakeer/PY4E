@@ -5,11 +5,11 @@ while True:
 	if entry == "done":
 		break
 	try:
-		ientry = int(entry)
+		fentry = float(entry)
 	except:
 		print("INVALID INPUT")
 		continue
-	total = total + ientry
+	total = total + fentry
 	counter = counter + 1
 
-print("total:",total,"\ncounter:",counter,"\naverage:",float(total)/counter)
+print("total:","%.3f" % total,"\ncounter:",counter,"\naverage:",float(total)/counter)

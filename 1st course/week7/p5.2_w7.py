@@ -5,16 +5,16 @@ while True:
 	if entry == "done":
 		break
 	try:
-		ientry = int(entry)
+		fentry = float(entry)
 	except:
 		print("INVALID INPUT")
 		continue
 	if maximum is None and minimum is None:
-		maximum = ientry
-		minimum = ientry
-	elif maximum < ientry:
-		maximum = ientry
-	elif minimum > ientry:
-		minimum = ientry
+		maximum = fentry
+		minimum = fentry
+	elif maximum < fentry:
+		maximum = fentry
+	elif minimum > fentry:
+		minimum = fentry
 
 print("Maximum:",maximum,"\nMinimum:",minimum)
